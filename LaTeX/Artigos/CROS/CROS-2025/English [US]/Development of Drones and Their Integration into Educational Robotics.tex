@@ -21,7 +21,7 @@
 \maketitle
 
 \begin{abstract}
-The Educa Drones project at the Instituto Federal Baiano - Campus Guanambi employs STEAM technology within an interdisciplinary educational robotics context, focusing on rotary-wing drones such as the IF450 and Colibri versions, all based on open hardware. Students and teachers can explore complex concepts by building and operating these drones, which are modeled in Tinkercad, 3D-printed using PETG polymer, and feature a modular and robust design with advanced electronic components and telemetry via ESP32 radio. This initiative enhances learning, promotes entrepreneurship and innovation, and introduces a new business model in the academic and corporate landscape.
+The Educa Drones project, developed by the Baiano Federal Institute - Guanambi Campus, applies the STEAM (Science, Technology, Engineering, Arts, and Mathematics) approach in an interdisciplinary practical learning environment. Focused on the use of rotary-wing drones, such as the IF450 model and the Colibri versions, the project allows students and teachers to explore complex concepts by building and operating these aircraft, applying them in pedagogy and student competitions. The initiative enhances learning, encourages entrepreneurship and innovation, and introduces a new business model in the academic and corporate scene.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -42,7 +42,7 @@ Building on this foundation, the Educa Drones project inspired the scientific in
 
 Conceived as technological products of interest to a niche audience, these drones have stimulated entrepreneurship within the institution through the creation of a startup to commercialize the developed drones. The enhancements and unique features of the IF450 and Colibri drones present significant competitive advantages. Combined with well-formulated strategies, these could evolve into an attractive business model for students and other project participants.
 
-To further elaborate on these aspects, this article is organized as follows. Section 2 presents the Theoretical Framework; Section 3 describes the Proposed Work; Section 4 details the Materials and Methods; Section 5 outlines the Results obtained; and finally, Section 6 discusses the conclusions of the project.
+To better elaborate on these aspects, this article is organized as follows. Section 2 presents the Theoretical Framework; Section 3 details the Materials and Methods; Section 4 presents the Results obtained; and finally, Section 6 discusses the project's Final Considerations.
 
 \section{Theoretical Framework}
 
@@ -78,135 +78,127 @@ Additive manufacturing is a technological tool that can significantly contribute
 
 3D printing is essentially the act of transforming raw material from one physical state to another to produce an object, based on a three-dimensional model that is materialized through layer-by-layer deposition \cite{b8}.
 
+It is through this technique that the drones listed below are developed, making it possible to reduce costs and reproduce parts if they need to be replaced.
+
 \section{Materials and Methods}
 
-Remotely piloted aircraft can be categorized as fixed-wing or rotary-wing. This study focuses exclusively on rotary-wing aircraft, commonly referred to as multirotors. For standardization purposes throughout this article, we use the term drone, as it is widely recognized.
+Remotely piloted aircraft can be either fixed-wing or rotary-wing. In this study, we limit ourselves to the rotary-wing type, which are also called multirotors. For standardization purposes, we refer to these aircraft using the term drone, as they are commonly known.
 
-With this in mind, this section explores the construction of the structural framework and the definition of electronic components for the drones developed within this subproject, which is part of the Educa Drones initiative. These open-hardware models have been designated as IF450, Colibri Standard, Colibri Lite, Colibri Mini, Colibri Micro, and Colibri Hexa.
+With this in mind, this section will explore the construction of the structure and the definition of the electronic components of the drones developed in this subproject within the Educa Drones project. These open-hardware initiative models were named IF450, Colibri Standard, Colibri Lite, Colibri Mini, Colibri Micro, and Colibri Hexa.
 
-\subsection{Construction Process:}
 
-The generic F450 drone model served as the starting point for developing the new aircraft. This model features four injection-molded plastic arms screwed onto two fiberglass plates to form the frame. In this design, all components are exposed, wiring is visible, and aerodynamics are compromised.
+\subsection{Construction Process}
+
+The generic F450 model drone was the starting point for the development of the new aircraft. It features four injection-molded plastic arms, attached with screws to two fiberglass plates to form the frame. In this model, all components are exposed, the wiring is visible, and the aerodynamics are compromised. However, despite its flaws, it is a low-cost option, relatively lightweight, and durable, making it widely used in competitions.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.07]{img/f450.jpg} 
-    \caption{Image of the generic F450 model. Source: Drones Company.}
-    \label{fig:my_label}
+    \caption{Generic F450 model. Source: Drones Company.}
+    \label{fig:F450}
 \end{figure}
 
-Building on this concept, a new drone was modeled with a modular design, allowing for easy disassembly of components. The new design protects wiring and equipment and includes a dedicated space for battery placement. The 3D modeling of the listed drone models was developed using the Tinkercad platform due to its intuitive interface, ease of use, and accessibility via a web browser, eliminating the need for a high-performance machine or any purchase or subscription.
+After understanding its limitations, the modeling of drones was initiated to correct its flaws while maintaining its proposal of being lightweight, durable, and low-cost. Additionally, the modularity criterion was included to facilitate the exchange of components, as well as a safe and appropriate compartment for the fitting of batteries. The three-dimensional modeling was developed on the Tinkercad platform, a free online tool that can be accessed through an internet browser and does not require a powerful machine to operate.
 
-Once the parts were designed, the project file was exported in ".STL" format to be sliced into layers using the FlashPrint software. This software generates a ".GX" file, which the printer recognizes to extrude material layer by layer, completing the manufacturing of the designed object.
+After the parts were made, the project file was exported in '.STL' format to be sliced into layers in the FlashPrint program. This program is responsible for creating the '.GX' file, which is recognized by the printer to perform the layer-by-layer extrusion until the manufactured object is completed.
 
-The new parts were printed using PETG polymer on Flash Forge’s Guider IIs printer and GTMax3D’s A2v2 Core printer. PETG filament was selected for its combination of durability, toughness, flexibility, lightweight properties, and impact resistance, making it ideal for manufacturing robust drone components.
+The new parts were printed using PETG polymer with Guider IIs printers from the manufacturer Flash Forge, and the A2v2 Core printer from the manufacturer GTMax3D. The PETG filament was chosen for its durability, toughness, flexibility, lightweight, and impact resistance in the manufactured objects.
 
 \subsection{IF450 Model}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.14]{img/IF450.png} 
-    \caption{Three-dimensional model of the IF450 drone in Tinkercad. Source: Author}
-    \label{fig:my_label}
+    \caption{Three-dimensional model of the IF450 drone in TinkerCad. Source: the author.}
+    \label{fig:IF450}
 \end{figure}
 
-The IF450 model was designed with a closed structure and rounded edges, enhancing device protection and improving aerodynamics. Its arms are constructed from carbon fiber tubes with a 16 mm diameter and a 1 mm wall thickness. The design includes air inlets and outlets to facilitate cooling of the electronic system and features appropriate fittings for all mandatory equipment and peripheral accessories.
+As shown in Figure \ref{fig:IF450}, the model was constructed with a closed structure and rounded edges, increasing the protection of devices and improving its aerodynamics. It features arms made of 16 mm diameter carbon fiber tubes with a 1 mm internal wall, air intakes and exhausts to allow cooling of the electro-electronic system, and proper fittings for all mandatory equipment and peripheral accessories.
 
-The new drone was named IF450, with "IF" representing the abbreviation for Instituto Federal (Federal Institute) and "450" indicating its size (the distance between motor axes). The central frame is composed of a single piece into which the carbon fiber arms fit, and the battery is mounted. The design incorporates two covers—one upper and one lower—secured by quick-release connectors and optionally four 2.5 mm diameter screws.
+The new drone was named IF450, representing the abbreviated name of the institution where it was developed (IF for Federal Institute), and 450 due to its size (distance between the motor shafts). It can be observed that the center of the frame consists of a solid piece where the carbon tube arms fit and where the battery is attached. Two covers, one upper and one lower, are fixed by quick-release connectors and optionally four 2.5 mm diameter screws.
 
-Removing these covers provides quick and easy access to the internal electronics, facilitating maintenance when needed. In addition to ensuring aerodynamics and protection, the design offers a clean and elegant aesthetic.
+With the removal of these covers, quick and easy access to the internal electronics is provided in case of maintenance needs. In addition to ensuring aerodynamics and protection, it maintains a clean and elegant appearance.
 
 \subsection{Colibri Standard Model}
 
-The drone is named after a hummingbird, Colibri, in homage to the city of Guanambi (meaning hummingbird in Tupi), with the suffix "Standard" to signify its role as the reference model for subsequent versions. Its design draws inspiration from the generic F450 model but incorporates minor modifications that result in significant positive impacts.
+The drone is named after a hummingbird: Colibri, in homage to the city of Guanambi (hummingbird in Tupi), with the suffix 'standard' because it is the reference model for the other versions. The shape of the central body of the frame was inspired by the generic F450, although with some strategic modifications to better accommodate the electronic components (Figure \ref{fig:F450}).
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.14]{img/Colibri-standard.png} 
-    \caption{Three-dimensional model of the Colibri Standard drone in Tinkercad. Source: Author}
-    \label{fig:my_label}
+    \caption{Three-dimensional model of the Colibri Standard drone in TinkerCad. Source: Author.}
+    \label{fig:ColibriStandard}
 \end{figure}
 
-The Colibri Standard maintains a 450 mm motor axis distance and features a central structure with a similar layout to the generic F450. However, it includes designated protected compartments for the flight controller and battery, which will be further detailed in the electronics section. The design employs carbon fiber tubular arms identical to those used in the IF450 (16 mm diameter and 1 mm wall thickness), enhancing durability, providing modularity, and safeguarding wires and devices housed within the arms. The landing gear is also constructed from carbon fiber tubes, though with a smaller diameter of 12 mm and the same 1 mm wall thickness.
+It maintains a distance of 450 mm between the axes and a similar-shaped center, using carbon fiber tubular arms, the same as the IF450, which provides protection for wires and devices that can be inserted inside. The landing gear is also made from carbon fiber tubes, with a diameter of 12 mm and a thickness of 1 mm.
 
-Additionally, the frame includes a dedicated area for the power module and energy distribution system, as well as predefined holes to facilitate the integration of various accessories, including sensors and robotic mechanisms. The lower central area is kept free to accommodate additional equipment.
+Additionally, it features several pre-defined holes that allow for the integration of various accessories such as sensors and robotic mechanisms.
 
 \subsection{Colibri Lite Model}
 
-The Colibri Lite ("Lite" meaning "light" in Portuguese) also maintains a 450 mm motor axis distance. It offers similar functionalities to the Colibri Standard but is equipped with a smaller battery, fewer sensor connection points, and is designed for smaller flight controllers, making it a lighter version.
-
-Its development was specifically aimed at competitions where weight plays a significant role in scoring, with autonomy becoming a secondary priority.
+The Colibri Lite has the same dimensions between the rotor axes as its Standard version, but with modifications to the central body structure prioritizing weight reduction. It was designed for competitions where weight significantly influences the score, but where drones of smaller dimensions are not allowed.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.14]{img/Colibri-lite.png} 
-    \caption{Three-dimensional model of the Colibri Lite drone in Tinkercad. Source: Author}
+    \caption{Three-dimensional model of the Colibri Lite drone in TinkerCad. Source: Author.}
     \label{fig:my_label}
 \end{figure}
 
 \subsection{Colibri Mini Model}
-The Colibri Mini is a smaller model with a 330 mm motor axis distance, making it the most compact among the Colibri series mentioned. It features 12 mm diameter carbon fiber tubular arms with a wall thickness of 1 mm. Essentially, it is a scaled-down version of the Colibri Standard.
+The Colibri Mini is a model with 330 mm between the motor axes. It features 12 mm diameter and 1 mm thickness carbon fiber tubular arms, making it generally a scaled-down version of the Colibri Lite.
 
-Its development was initiated with competitions in mind, specifically those that restrict drones to sizes smaller than 450 mm. Although the default size is 330 mm, this dimension can be adjusted as needed.
+Its development was initiated with the intention of being used in competitions where drones smaller than 450 mm are the only ones allowed. Although it has a standard size of 330 mm, this dimension can be modified as needed.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.14]{img/Colibri-mini.png} 
-    \caption{Three-dimensional model of the Colibri Mini drone in Tinkercad. Source: Author}
-    \label{fig:my_label}
+    \caption{Three-dimensional model of the Colibri Mini drone in TinkerCad. Source: Author.}
+    \label{fig:ColibriMini}
 \end{figure}
 
 \subsection{Colibri Micro Model}
 
-The Colibri Micro is the most compact and lightweight model in the Colibri series, featuring a motor axis distance of 188 mm. It is the only model in the series with a structure entirely manufactured through additive manufacturing.
+The Colibri Micro is the most compact and lightweight model in the Colibri series, with a distance of 188 mm between the motor axes. It is the only one to feature a structure entirely made through additive manufacturing.
 
-This model was designed for aerial missions in indoor environments or areas with numerous obstacles. Its robust, natively integrated propeller guards provide reduced vulnerability to damage and enhanced safety for animals and people.
+Developed for aerial missions in confined spaces or areas with numerous obstacles, its robust and natively integrated propeller protection allows for lower vulnerability to damage and greater safety for animals and people.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.12]{img/Colibri-micro.png} 
-    \caption{Three-dimensional model of the Colibri Micro drone in Tinkercad. Source: Author}
+    \caption{Three-dimensional model of the Colibri Micro drone in TinkerCad. Source: Author.}
     \label{fig:my_label}
 \end{figure}
 
 \subsection{Colibri Hexa Model}
-The Colibri Hexa, a six-rotor version, was developed to meet the requirements of the Drones IFSC competition for the H550 category. This category introduces a higher level of complexity in frame design due to the larger dimensions and the requirement for a 550 mm distance between opposing rotors and 60° spacing between each subsequent arm. Like the other versions, this model features 16 mm diameter carbon fiber tubular arms.
+The Colibri-Hexa is the largest in its line, with 6 rotors and 550 mm distance between opposite rotors and 60° between each subsequent arm. As with the other versions, this model features carbon fiber tubular arms with a diameter of 16 mm.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.14]{img/Colibri-hexa.png} 
-    \caption{Three-dimensional model of the Colibri Hexa drone in Tinkercad. Source: Author}
+    \caption{Three-dimensional model of the Colibri Hexa drone in TinkerCad. Source: Author.}
     \label{fig:my_label}
 \end{figure}
 
-The presence of six motors provides the drone with increased stability and redundancy, allowing the aircraft to remain in flight even if one motor fails. However, the larger frame dimensions and additional motors increase the drone's weight and power consumption. As a result, weight and energy efficiency become critical and limiting factors in fulfilling its intended uses.
+The existence of six motors provides the drone with greater stability and redundancy, allowing the aircraft to remain in flight even if one of them fails. Additionally, it is capable of operating with added weight, which enables the integration of more robust equipment.
 
 \subsection{Electronic Components}
 
-This section covers the propulsion system, flight controllers, integrated sensors, and other essential components that contribute to the functionality and performance of these unmanned aerial vehicles. Understanding these characteristics will clarify how design and technology choices directly influence their operational capabilities and efficiency.
+This topic briefly and technically addresses the propulsion system, flight controllers, integrated sensors, and other essential components that contribute to the functionality and performance of these unmanned aerial vehicles.
 
-All the developed drone versions share similar electronic components in the following aspects: Electronic Speed Controllers (ESC) utilizing BLHeli or SimonK firmware and connected to an 8-bit or 32-bit flight controller configured with Ardupilot firmware.
+All versions of the drones developed share similar electronic components, such as the Electronic Speed Control (ESC), which uses BLHeli or SimonK firmware, and is connected to a 32-bit flight controller configured with Ardupilot firmware.
 
-\begin{itemize}
-    \item IF450 Model: The IF450 uses ESCs capable of handling 20 amperes, 800 KV brushless motors, 9” propellers, and a 6000 mAh lithium-ion battery pack manufactured by the team. Its flight controller is equipped with an 8-bit ATmega2560 microcontroller.
-    
-    \item Colibri Standard Model: The Colibri Standard is equipped with the same ESCs, motors, and propellers as the IF450, along with a 6000 mAh lithium-ion battery pack developed by the team. Its flight controller features a 32-bit STM32F427 microcontroller.
-    
-    \item Colibri Lite Model: The Colibri Lite utilizes the same ESC, motor, and propeller set as the Standard version but is designed to accommodate a smaller lithium-polymer battery with a 2500 mAh capacity and a flight controller based on the STM32F405RGT microcontroller. This configuration results in a lighter aircraft, offering a competitive advantage in events where weight is a decisive factor.
+As for the rotors, brushless motors of 800 KV, 1400 KV, and 2824 KV are used, with a relationship inversely proportional to the size of the structure and the propeller.
 
-    \item Colibri Mini Model: The Colibri Mini features a frame design similar to the Lite version but at a reduced size. It is equipped with four 1400 KV motors, foldable 8” propellers, and a 20A 4-in-1 ESC configured with BLHeli firmware. This model supports a 3000 mAh lithium-polymer battery pack and a flight controller based on the STM32F405RGT microcontroller. The compact size allows this drone to compete in events requiring drones with motor axis distances of up to 330 mm.
+All batteries are custom-made for each model, using lithium-ion cells with varying capacities and a nominal voltage of 3.7 volts.
 
-    \item Colibri Micro Model: The Colibri Micro is equipped with a flight controller based on the 32-bit STM32H743VIT6 microcontroller, a 30A 4-in-1 ESC, 2824 KV motors with 6” propellers, and a 3000 mAh lithium-ion battery pack.
+For telemetry, all versions use the ESP32 module running Drone Bridge firmware. In combination with a 2.4 GHz WiFi router, this setup allows for bidirectional and encrypted MAVLink communication between the drone and the control station (computer or smartphone).
 
-    \item Colibri Hexa Model: The Colibri Hexa employs the same ESC, motor, and propeller configuration as the Standard version, with modifications to the frame to accommodate two 3000 mAh lithium-polymer battery packs and a flight controller based on the STM32F405RGT microcontroller. The six-motor setup provides greater thrust, enabling the drone to carry heavier payloads compared to the other models.
-    
-\end{itemize}
+The GNSS positioning system used in all versions is equipped with the Ublox-M10050 receiver chip and QMC5883L magnetic sensor. This system operates at a higher frequency than normal and supports all GNSS L1 signals (GPS, GLONASS, Galileo, BeiDou), three of which can be used simultaneously and can use up to 32 satellites for navigation with a 10 Hz update rate.
 
-For telemetry, all versions use the ESP32 module running Drone Bridge firmware. In combination with a 2.4 GHz WiFi router, this setup enables encrypted bidirectional MAVLink communication between the drone and the control station (computer or smartphone).
+\section{Results and Discussions}
 
-The GNSS positioning system in all versions uses a Ublox-M10050 receiver chip and a QMC5883L magnetometer. This system operates at a higher-than-normal frequency, supports all L1 GNSS signals (GPS, GLONASS, Galileo, BeiDou)—with up to three used simultaneously—and can navigate with up to 32 satellites at a 10 Hz update rate.
-
-\section{Results and Discussion}
+\subsection{Aircraft Performance}
 
 \begin{table}[htbp]
 \centering
@@ -223,20 +215,71 @@ Colibri Micro          & 275 g*                    & -                    & +300
 Colibri Hexa           & -                         & -                    & +300 m                     \\ \hline
 \end{tabularx}
 \newline
-\small *Estimated weight
+\small *Estimated Weight
 \end{table}
 
-The IF450 model has the highest weight among the tested 450 mm drones, weighing 1196 g. Conversely, the Colibri Lite is the lightest in the 450 mm class, with a weight of 788 g. Weight reduction is a critical factor, particularly in competitions where lighter drones can significantly enhance performance, as observed with the Colibri Lite. For competitions where drone size is not restricted, the Colibri Mini, Micro, and Hexa versions are excellent alternatives, with the Mini and Micro designed for indoor competitions with multiple obstacles, and the Hexa excelling in scenarios where payload capacity and flight stability are crucial for scoring.
+The IF450 model has the highest weight among the 450mm drones tested, at 1196 grams. On the other hand, the Colibri Lite is the lightest among the 450 class drones, weighing 788 g. Weight reduction is a critical factor, especially in competitions where lightness can significantly improve the score. For competitions where the size of the aircraft is not a limitation, the Colibri Mini, Micro, and Hexa versions become great alternatives, with the first two designed for competitions in indoor environments with multiple obstacles, and the latter where payload and flight stability become crucial for a good score.
 
-Among the 450 mm class drones, the Colibri Standard demonstrated the longest flight time, with 28 minutes, followed by the IF450 at 24 minutes, and the Colibri Lite at 12 minutes. The 4-minute difference between the Colibri Standard and IF450 can be attributed to the lower weight of the Colibri Standard. In contrast, the Colibri Lite has a significantly shorter flight time of 12 minutes, due to its smaller lithium-polymer battery, which has a more limited voltage range compared to the lithium-ion batteries used in the other models.
+Among the 450 class drones, the Colibri Standard achieved the longest flight time, with 28 minutes, followed by the IF450 with 24 minutes, and the Colibri Lite with 12 minutes. The 4-minute difference between the Colibri Standard and the IF450 can be attributed to the lower weight. In contrast, the Colibri Lite has a significantly shorter flight time of only 12 minutes, due to its smaller battery capacity. The Colibri Mini also achieved 28 minutes of flight time despite having a smaller battery, though its weight is 34.3\% less than the Colibri Standard.
 
-The Colibri Mini also achieved a flight time of 28 minutes while being 34.3\% lighter than the Colibri Standard. All models demonstrate telemetry capabilities with a range exceeding 300 m, indicating robust communication suitable for most field applications. This range is sufficient for operations over areas up to 9 hectares.
+All models have a telemetry range capacity of +300 m, indicating robust communication sufficient for most field applications. This range is suitable for operations in areas smaller than 9 hectares.
 
-\section*{Conclusions}
+\subsection{Pedagogical Application}
 
-This study highlighted the distinctive characteristics of each drone model developed under the Educa Drones project, emphasizing their ideal applications based on weight, flight time, and telemetry capabilities. The ongoing development and evaluation of these drones could result in significant improvements in the efficiency and versatility of unmanned aerial vehicles.
+The pedagogical use of the developed drones was implemented through fairs, exhibitions, workshops, and training sessions, often led by the students participating in the project as a form of mutual learning.
 
-For more comprehensive conclusions, additional data on the Colibri Micro and Colibri Hexa models is required. Future investigations should focus on collecting this data, as well as analyzing durability, maximum takeoff weight, and flight stability under adverse wind conditions. Moreover, comparisons with other commercial drones could provide a broader perspective on the competitiveness of the developed models.
+Through research and teaching activities, students from the Guanambi campus have the opportunity to work on technological development activities, such as the present study. These initiatives encourage students to engage in the exact and natural sciences in a spontaneous and organic way.
+
+One of the results of this encouragement occurred in 2023, when a high school student from the institute, a participant in the Educa Drones project, was awarded a scientific initiation scholarship from the National Robotics Exhibition. This demonstrates the quality of education when enhanced by pedagogical resources.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.12]{img/petrolina.jpg} 
+    \caption{Drone Assembly and Configuration Training in Petrolina-PE. Source: Author.}
+    \label{fig:petrolina}
+\end{figure}
+
+Also noteworthy is the training program 'Drone Assembly and Configuration,' taught by the professor from IF Baiano Campus Guanambi, Leandro G. dos Santos, and by students experienced in aircraft assembly. The goal is to foster innovation in remotely piloted aircraft systems (RPAS) across various IF Baiano campuses, with implementations already carried out at the Catu-BA, Alagoinhas-BA, and Petrolina Zona Rural campuses (Figure \ref{fig:petrolina}) of the Federal Institute of Pernambuco’s Sertão region. The course is also regularly offered at the home campus, with plans to expand to other units of the Federal Network and other interested institutions.
+
+Aimed at high school and undergraduate students, this course in the training program adopts the STEAM methodology, covering legislation, application, assembly, and configuration of drones, integrating theory and practice in a didactic way.
+
+To maintain the interest of participants in events promoted by the project, participation in competitions, such as the National Drone Models Olympiad (ONdDA), is encouraged. The first edition of this competition will take place in 2025. In addition to being beneficial for students, who have the opportunity to meet and learn from other participants, it encourages innovation and scientific development in the country.
+
+Furthermore, IF Baiano Campus Guanambi is working to organize an internal competition, which will bring together all the institutions that participated in the training program and others that are interested, with the aim of putting into practice knowledge from the STEAM methodology, such as horizontal launch, area and perimeter calculation, computer vision, energy efficiency, aerodynamics, among others.
+
+\subsection{Application in Student Competitions}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.30]{img/imav2024.png} 
+    \caption{Drones Guanambi Team in the IMAV outdoor competition. Source: Author.}
+    \label{fig:imav}
+\end{figure}
+
+The development of the different drone models presented in this study, integrated with the preparation of the article 'Comparative analysis of cameras for ArUco marker recognition in Unmanned Aerial Vehicles,' enabled the participation of students from IF Baiano Campus Guanambi in the 2024 International Micro Aerial Vehicles Competition (Figure \ref{fig:imav}), where the Colibri Standard (Figure \ref{fig:ColibriStandard}) was used by the Drones Guanambi team.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.30]{img/ifsc.png} 
+    \caption{Technical presentation of the Colibri drones during the Drones IFSC competition. Source: Author.}
+    \label{fig:ifsc}
+\end{figure}
+
+In the 'Drones IFSC' competition, held in Florianópolis in 2024, students from IF Baiano Campus Guanambi debuted the Colibri Cargo drone, which caught the attention of other competitors and judges (Figure \ref{fig:ifsc}) due to its innovative design and high cargo capacity, finishing the event with a third-place podium position.
+
+The participation of students in student competitions, in addition to enabling the dissemination of their innovations and winning awards, also provides scientific dissemination, the popularization of science, sharing of technical knowledge, networking, and cultural exchange. Consequently, this interdisciplinary collaboration positively impacts the teaching-learning process, contributing to the academic and civic formation of the students.
+
+Similarly, the challenges proposed in these competitions foster the technological development of the country, encouraging students to create cost-effective solutions to real problems, which, when improved, allow for entry into the commercial sector.
+
+\section*{Final Considerations}
+
+Distinctive characteristics of each drone model developed in the Educa Drones project are highlighted, showcasing their ideal applications based on weight, flight time, and telemetry capabilities. The continuous development and evaluation of these drones can lead to significant improvements in the efficiency and versatility of unmanned aerial vehicles.
+
+For more comprehensive conclusions, additional data from the Colibri Micro and Colibri Hexa models are needed. Future investigations should focus on collecting this data, as well as analyzing resistance, maximum takeoff weight, and stability and flight in adverse wind conditions. Furthermore, a comparison with other commercial drones can provide a broader perspective on the competitiveness of the developed models.
+
+The competitions in which the drones participated revealed both the qualities and flaws of the models used, allowing for the analysis of weak points, including the replacement of the current telemetry with more fault-tolerant systems.
+
+Aimed at the pedagogical applications and student competitions planned for 2025, the use of the drones described here, both in the National Drone Models Olympiad and the internal competition, will enable greater practical observation of the real effects of extension programs and their contribution to the formation of the students involved.
 
 \begin{thebibliography}{00}
 \bibitem{b1} Abreu, J. V. V.; Bastos, B. L. (2015). Robótica Pedagógica e Currículo do Ensino Fundamental: Atuação em uma Escola Municipal do Projeto UCA. Revista Brasileira de Informática na Educação, v.23, n.3, 2015
