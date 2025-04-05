@@ -1,4 +1,4 @@
-# 📚 Dronepedia - Biblioteca de Tutoriais sobre Drones  
+# 📚 Dronepedia - Biblioteca sobre Drones  
 
 Bem-vindo à **Dronepedia**, a biblioteca de tutoriais do projeto **Educa Drones**! 🚀 Aqui você encontra conteúdos educativos sobre drones, desde conceitos básicos até técnicas avançadas de manutenção e programação.  
 
